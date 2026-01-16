@@ -9,16 +9,16 @@
 <body>
     <div class="container">
         <header>
-            <h1>Decimal Place Value Visualizer</h1>
-            <p class="subtitle">Explore how numbers work on the right side of the decimal point</p>
+            <h1>Place Value Visualizer</h1>
+            <p class="subtitle">Explore how numbers work on both sides of the decimal point</p>
         </header>
 
         <div class="input-section">
-            <label for="decimal-input">Enter a decimal number:</label>
+            <label for="decimal-input">Enter a number:</label>
             <input 
                 type="text" 
                 id="decimal-input" 
-                placeholder="e.g., 0.123 or 0.56789"
+                placeholder="e.g., 123.456 or 98765.4321"
                 autocomplete="off"
             >
             <button id="demo-btn" class="demo-btn">🎬 Auto Demo</button>
@@ -29,19 +29,13 @@
             <div class="place-value-section">
                 <h2>Place Value Chart</h2>
                 <div class="decimal-point-wrapper">
-                    <span class="decimal-label">0</span>
+                    <div class="integer-place-value-container" id="integer-place-value-container">
+                        <!-- Integer place values (ones, tens, hundreds, etc.) will be dynamically generated -->
+                    </div>
                     <span class="decimal-point">.</span>
                     <div class="place-value-container" id="place-value-container">
-                        <!-- Place values will be dynamically generated -->
+                        <!-- Decimal place values (tenths, hundredths, etc.) will be dynamically generated -->
                     </div>
-                </div>
-            </div>
-
-            <!-- Fractional Breakdown -->
-            <div class="fraction-section">
-                <h2>Fractional Breakdown</h2>
-                <div class="fraction-container" id="fraction-container">
-                    <!-- Fractions will be dynamically generated -->
                 </div>
             </div>
 
@@ -50,6 +44,14 @@
                 <h2>Expanded Form</h2>
                 <div class="expanded-form" id="expanded-form">
                     <!-- Expanded form will be dynamically generated -->
+                </div>
+            </div>
+
+            <!-- Fractional Breakdown (Decimal Side Only) -->
+            <div class="fraction-section">
+                <h2>Fractional Breakdown (Decimal Part)</h2>
+                <div class="fraction-container" id="fraction-container">
+                    <!-- Fractions will be dynamically generated -->
                 </div>
             </div>
         </div>

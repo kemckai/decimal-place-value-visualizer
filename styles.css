@@ -119,6 +119,14 @@ h2 {
     flex-wrap: wrap;
 }
 
+.integer-place-value-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
 .decimal-label {
     font-size: 2rem;
     font-weight: bold;
