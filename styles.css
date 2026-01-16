@@ -418,3 +418,490 @@ h2 {
     }
 }
 
+/* ==================== NEW FEATURES CSS ==================== */
+
+/* Dark Theme */
+body.dark-theme {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+}
+
+body.dark-theme .container {
+    background: #2d2d44;
+    color: #e0e0e0;
+}
+
+body.dark-theme .input-section,
+body.dark-theme .place-value-section,
+body.dark-theme .fraction-section,
+body.dark-theme .expanded-form-section {
+    background: #1a1a2e;
+}
+
+body.dark-theme .place-value-box,
+body.dark-theme .fraction-item,
+body.dark-theme .expanded-term {
+    background: #2d2d44;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme h1,
+body.dark-theme h2 {
+    color: #9d8df1;
+}
+
+body.dark-theme .subtitle,
+body.dark-theme .empty-state {
+    color: #999;
+}
+
+/* Header Controls */
+.header-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Controls Section */
+.controls-section {
+    margin-bottom: 20px;
+}
+
+.mode-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mode-btn {
+    padding: 10px 20px;
+    background: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.mode-btn:hover {
+    background: #e0e0e0;
+    border-color: #667eea;
+}
+
+.mode-btn.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+/* Input Section Updates */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: #555;
+}
+
+body.dark-theme .input-group label {
+    color: #bbb;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.toggle-btn,
+.action-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.toggle-btn:hover,
+.action-btn:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+.toggle-btn.active {
+    background: #764ba2;
+}
+
+/* Power Notation */
+.power-notation {
+    font-size: 0.7em;
+    color: #999;
+    margin-left: 5px;
+}
+
+body.dark-theme .power-notation {
+    color: #777;
+}
+
+/* Click to Highlight */
+.place-value-box.clicked-highlight,
+.expanded-term.clicked-highlight {
+    border-color: #ff6b6b !important;
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.6) !important;
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* Total Calculation */
+.total-calculation {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+body.dark-theme .total-calculation {
+    background: #2d2d44;
+    color: #9d8df1;
+}
+
+/* Scientific Notation */
+.scientific-notation {
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+body.dark-theme .scientific-notation {
+    background: #2d2d44;
+}
+
+.scientific-display {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+body.dark-theme .scientific-display {
+    color: #bbb;
+}
+
+/* Quiz Section */
+.quiz-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+body.dark-theme .quiz-section {
+    background: #1a1a2e;
+}
+
+.quiz-question {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+body.dark-theme .quiz-question {
+    color: #e0e0e0;
+}
+
+.quiz-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.quiz-btn {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.quiz-btn:hover {
+    background: #5568d3;
+}
+
+.quiz-score {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #667eea;
+}
+
+body.dark-theme .quiz-score {
+    color: #9d8df1;
+}
+
+/* Step-by-Step Section */
+.step-by-step-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+body.dark-theme .step-by-step-section {
+    background: #1a1a2e;
+}
+
+.step-content {
+    min-height: 100px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+body.dark-theme .step-content {
+    background: #2d2d44;
+}
+
+.step-explanation {
+    text-align: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+body.dark-theme .step-explanation {
+    color: #e0e0e0;
+}
+
+.step-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.step-btn {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.step-btn:hover:not(:disabled) {
+    background: #5568d3;
+}
+
+.step-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.step-indicator {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 600;
+}
+
+body.dark-theme .step-indicator {
+    color: #999;
+}
+
+/* Comparison View */
+.comparison-view {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+body.dark-theme .comparison-view {
+    background: #1a1a2e;
+}
+
+.comparison-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.comparison-number h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+body.dark-theme .comparison-number h3 {
+    color: #9d8df1;
+}
+
+.comparison-place-values {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .comparison-containers {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* History Section */
+.history-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+body.dark-theme .history-section {
+    background: #1a1a2e;
+}
+
+.history-section h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.clear-btn {
+    padding: 5px 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.clear-btn:hover {
+    background: #c0392b;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-item {
+    padding: 12px 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.history-item:hover {
+    border-color: #667eea;
+    background: #f0f4ff;
+    transform: translateX(5px);
+}
+
+body.dark-theme .history-item {
+    background: #2d2d44;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme .history-item:hover {
+    border-color: #9d8df1;
+    background: #3d3d54;
+}
+
+/* Visual Connection Lines (simplified - could be enhanced with SVG) */
+.place-value-box.active {
+    position: relative;
+}
+
+/* Enhanced place value labels with power notation */
+.place-value-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .header-controls {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .mode-selector {
+        gap: 5px;
+    }
+
+    .mode-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .button-group {
+        width: 100%;
+    }
+
+    .button-group button {
+        flex: 1;
+    }
+
+    .quiz-controls,
+    .step-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .quiz-btn,
+    .step-btn {
+        width: 100%;
+    }
+}
+
