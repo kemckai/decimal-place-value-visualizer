@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal Place Value Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Decimal Place Value Visualizer</h1>
+            <p class="subtitle">Explore how numbers work on the right side of the decimal point</p>
+        </header>
+
+        <div class="input-section">
+            <label for="decimal-input">Enter a decimal number:</label>
+            <input 
+                type="text" 
+                id="decimal-input" 
+                placeholder="e.g., 0.123 or 0.56789"
+                autocomplete="off"
+            >
+            <button id="demo-btn" class="demo-btn">🎬 Auto Demo</button>
+        </div>
+
+        <div class="main-content">
+            <!-- Place Value Chart -->
+            <div class="place-value-section">
+                <h2>Place Value Chart</h2>
+                <div class="decimal-point-wrapper">
+                    <span class="decimal-label">0</span>
+                    <span class="decimal-point">.</span>
+                    <div class="place-value-container" id="place-value-container">
+                        <!-- Place values will be dynamically generated -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fractional Breakdown -->
+            <div class="fraction-section">
+                <h2>Fractional Breakdown</h2>
+                <div class="fraction-container" id="fraction-container">
+                    <!-- Fractions will be dynamically generated -->
+                </div>
+            </div>
+
+            <!-- Expanded Form -->
+            <div class="expanded-form-section">
+                <h2>Expanded Form</h2>
+                <div class="expanded-form" id="expanded-form">
+                    <!-- Expanded form will be dynamically generated -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
